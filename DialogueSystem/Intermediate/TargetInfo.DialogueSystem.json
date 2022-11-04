@@ -2,12 +2,12 @@
 	"Targets": [
 		{
 			"Name": "DialogueSystem",
-			"Path": "E:\\Uni Year 3\\Mechanics Programming\\Mechanics Programming\\DialogueSystem\\Source\\DialogueSystem.Target.cs",
+			"Path": "E:\\Uni Year 3\\Mechanics Programming\\MechanicsProgramming\\MechanicsProgramming\\DialogueSystem\\Source\\DialogueSystem.Target.cs",
 			"Type": "Game"
 		},
 		{
 			"Name": "DialogueSystemEditor",
-			"Path": "E:\\Uni Year 3\\Mechanics Programming\\Mechanics Programming\\DialogueSystem\\Source\\DialogueSystemEditor.Target.cs",
+			"Path": "E:\\Uni Year 3\\Mechanics Programming\\MechanicsProgramming\\MechanicsProgramming\\DialogueSystem\\Source\\DialogueSystemEditor.Target.cs",
 			"Type": "Editor"
 		}
 	]

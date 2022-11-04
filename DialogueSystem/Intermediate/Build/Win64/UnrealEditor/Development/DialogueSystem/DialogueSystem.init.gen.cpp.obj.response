@@ -1,4 +1,4 @@
-"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Inc\DialogueSystem\DialogueSystem.init.gen.cpp"
+"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Inc\DialogueSystem\DialogueSystem.init.gen.cpp"
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
@@ -251,8 +251,8 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
-/I "E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Inc\DialogueSystem"
-/I "E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Source"
+/I "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Inc\DialogueSystem"
+/I "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Source"
 /I ThirdParty\mimalloc\include
 /I ThirdParty\LibTiff\Source\Win64
 /I ThirdParty\LibTiff\Source
@@ -273,12 +273,12 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/FI"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/FI"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\Definitions.DialogueSystem.h"
-/Yu"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\DialogueSystem.init.gen.cpp.obj"
-/sourceDependencies "E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\DialogueSystem.init.gen.cpp.json"
+/FI"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/FI"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\Definitions.DialogueSystem.h"
+/Yu"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\DialogueSystem.init.gen.cpp.obj"
+/sourceDependencies "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Development\DialogueSystem\DialogueSystem.init.gen.cpp.json"
 /Zc:inline
 /nologo
 /Oi

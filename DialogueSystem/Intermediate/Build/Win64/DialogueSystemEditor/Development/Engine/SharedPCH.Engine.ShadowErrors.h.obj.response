@@ -1,4 +1,4 @@
-"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
+"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.cpp"
 /I .
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Engine
 /I Runtime
@@ -275,10 +275,10 @@
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\shared"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\um"
 /I "C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\winrt"
-/Yc"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
-/Fp"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
-/Fo"E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
-/sourceDependencies "E:\Uni Year 3\Mechanics Programming\Mechanics Programming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.json"
+/Yc"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h"
+/Fp"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.pch"
+/Fo"E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+/sourceDependencies "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\DialogueSystemEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.json"
 /Zc:inline
 /nologo
 /Oi
