@@ -1,0 +1,21 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\uni year 3\\mechanics programming\\mechanics programming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\inc\\dialoguesystem\\mycharacter.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\uni year 3\\mechanics programming\\mechanics programming\\dialoguesystem\\intermediate\\build\\win64\\dialoguesystemeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\uni year 3\\mechanics programming\\mechanics programming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\development\\dialoguesystem\\definitions.dialoguesystem.h",
+            "e:\\uni year 3\\mechanics programming\\mechanics programming\\dialoguesystem\\source\\dialoguesystem\\mycharacter.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\charactermovementreplication.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\engine\\classes\\gameframework\\rootmotionsource.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\rootmotionsource.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\character.generated.h",
+            "e:\\uni year 3\\mechanics programming\\mechanics programming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\inc\\dialoguesystem\\mycharacter.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
