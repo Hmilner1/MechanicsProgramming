@@ -3,7 +3,9 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
+#include "Kismet/GameplayStatics.h"
 #include "MyCharacter.generated.h"
 
 UCLASS()
@@ -26,4 +28,13 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
+protected:
+	void MoveForward(float AxisVal);
+	void MoveRight(float AxisVal);
+	void HorizontalRotation(float Val);
+	void VerticalRotation(float Val);
+
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
+	UCameraComponent* m_Camera;
+	
 };
