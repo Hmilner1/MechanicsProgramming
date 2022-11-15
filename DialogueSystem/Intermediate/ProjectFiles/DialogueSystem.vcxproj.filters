@@ -23,6 +23,15 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Config\HoloLens">
+      <UniqueIdentifier>{4C8DD267-CDE7-336F-8602-F5F485D22BAB}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\HoloLens\HoloLensEngine.ini">
+      <Filter>Config\HoloLens</Filter>
+    </None>
     <Filter Include="Source\DialogueSystem">
       <UniqueIdentifier>{03497D52-DB9E-3B85-9C45-B087455F05B5}</UniqueIdentifier>
     </Filter>
@@ -33,6 +42,12 @@
       <Filter>Source\DialogueSystem</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\DialogueSystem\DialogueSystem.h">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DialogueSystem\DialogueWidget.cpp">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DialogueSystem\DialogueWidget.h">
       <Filter>Source\DialogueSystem</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\DialogueSystem\MyCharacter.cpp">

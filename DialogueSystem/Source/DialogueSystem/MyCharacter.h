@@ -5,8 +5,9 @@
 #include "CoreMinimal.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
-#include "Kismet/GameplayStatics.h"
 #include "MyCharacter.generated.h"
+
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FTestEvent);
 
 UCLASS()
 class DIALOGUESYSTEM_API AMyCharacter : public ACharacter
@@ -27,14 +28,19 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+	
+	UPROPERTY(BlueprintAssignable)
+	FTestEvent OnTestEvent;
 
 protected:
 	void MoveForward(float AxisVal);
 	void MoveRight(float AxisVal);
 	void HorizontalRotation(float Val);
 	void VerticalRotation(float Val);
-
+	void Interact();
+	
+	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")
 	UCameraComponent* m_Camera;
-	
+
 };

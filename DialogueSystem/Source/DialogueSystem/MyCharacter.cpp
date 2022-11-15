@@ -2,6 +2,7 @@
 
 
 #include "MyCharacter.h"
+#include "Blueprint/UserWidget.h"
 
 // Sets default values
 AMyCharacter::AMyCharacter()
@@ -38,6 +39,7 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAxis(TEXT("Turn"), this, &AMyCharacter::HorizontalRotation);
 	PlayerInputComponent->BindAxis(TEXT("LookUp"), this, &AMyCharacter::VerticalRotation);
 	PlayerInputComponent->BindAction(TEXT("Jump"), IE_Pressed, this, &AMyCharacter::Jump);
+	PlayerInputComponent->BindAction(TEXT("Interact"), IE_Pressed,this, &AMyCharacter::Interact);
 	
 }
 
@@ -66,6 +68,13 @@ void AMyCharacter::VerticalRotation(float Val)
 		m_Camera->AddLocalRotation(FRotator(Val,0,0));
 	}
 }
+
+void AMyCharacter::Interact()
+{
+	
+	OnTestEvent.Broadcast();
+}
+
 
 
 
