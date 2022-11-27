@@ -18,17 +18,27 @@ void EmptyLinkFunctionForGeneratedCodeMyCharacter() {}
 // End Cross Module References
 	struct Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics
 	{
+		struct _Script_DialogueSystem_eventTestEvent_Parms
+		{
+			FString SentText;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_SentText;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::NewProp_SentText = { "SentText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(_Script_DialogueSystem_eventTestEvent_Parms, SentText), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::NewProp_SentText,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "MyCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_DialogueSystem, nullptr, "TestEvent__DelegateSignature", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_DialogueSystem, nullptr, "TestEvent__DelegateSignature", nullptr, nullptr, sizeof(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::_Script_DialogueSystem_eventTestEvent_Parms), Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -80,7 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeMyCharacter() {}
 		{ "ModuleRelativePath", "MyCharacter.h" },
 	};
 #endif
-	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent = { "OnTestEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyCharacter, OnTestEvent), Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent_MetaData)) }; // 142562594
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent = { "OnTestEvent", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(AMyCharacter, OnTestEvent), Z_Construct_UDelegateFunction_DialogueSystem_TestEvent__DelegateSignature, METADATA_PARAMS(Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_AMyCharacter_Statics::NewProp_OnTestEvent_MetaData)) }; // 1487713820
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMyCharacter_Statics::NewProp_m_Camera_MetaData[] = {
 		{ "Category", "Camera" },
@@ -129,9 +139,9 @@ void EmptyLinkFunctionForGeneratedCodeMyCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMyCharacter, AMyCharacter::StaticClass, TEXT("AMyCharacter"), &Z_Registration_Info_UClass_AMyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyCharacter), 1344177214U) },
+		{ Z_Construct_UClass_AMyCharacter, AMyCharacter::StaticClass, TEXT("AMyCharacter"), &Z_Registration_Info_UClass_AMyCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMyCharacter), 4059870320U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_2437255612(TEXT("/Script/DialogueSystem"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_3365755827(TEXT("/Script/DialogueSystem"),
 		Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

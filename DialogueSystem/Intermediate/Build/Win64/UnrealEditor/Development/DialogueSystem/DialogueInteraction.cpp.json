@@ -1,0 +1,30 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\source\\dialoguesystem\\dialogueinteraction.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\intermediate\\build\\win64\\dialoguesystemeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\development\\dialoguesystem\\definitions.dialoguesystem.h",
+            "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\source\\dialoguesystem\\dialogueinteraction.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\textblock.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\textwidgettypes.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\widget.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\visual.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\visual.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\components\\slatewrappertypes.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\slatewrappertypes.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\slate\\widgettransform.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\widgettransform.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetnavigation.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\source\\runtime\\slatecore\\public\\types\\navigationmetadata.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\widgetnavigation.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\widget.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\textwidgettypes.generated.h",
+            "d:\\unrealengine\\ue_5.0\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\textblock.generated.h",
+            "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\inc\\dialoguesystem\\dialogueinteraction.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

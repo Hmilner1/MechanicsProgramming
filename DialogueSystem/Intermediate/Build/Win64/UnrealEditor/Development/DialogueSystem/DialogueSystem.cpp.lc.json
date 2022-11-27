@@ -1,0 +1,14 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\source\\dialoguesystem\\dialoguesystem.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\intermediate\\build\\win64\\dialoguesystemeditor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\intermediate\\build\\win64\\unrealeditor\\development\\dialoguesystem\\definitions.dialoguesystem.h",
+            "e:\\uni year 3\\mechanics programming\\mechanicsprogramming\\mechanicsprogramming\\dialoguesystem\\source\\dialoguesystem\\dialoguesystem.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

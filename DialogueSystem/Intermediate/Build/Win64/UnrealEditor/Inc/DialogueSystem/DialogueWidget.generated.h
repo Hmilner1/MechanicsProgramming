@@ -13,18 +13,18 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define DIALOGUESYSTEM_DialogueWidget_generated_h
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_SPARSE_DATA
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_RPC_WRAPPERS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_SPARSE_DATA
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execDisplayBox);
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execDisplayBox);
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDialogueWidget(); \
 	friend struct Z_Construct_UClass_UDialogueWidget_Statics; \
@@ -33,7 +33,7 @@ public: \
 	DECLARE_SERIALIZER(UDialogueWidget)
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_INCLASS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesUDialogueWidget(); \
 	friend struct Z_Construct_UClass_UDialogueWidget_Statics; \
@@ -42,7 +42,7 @@ public: \
 	DECLARE_SERIALIZER(UDialogueWidget)
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_STANDARD_CONSTRUCTORS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UDialogueWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UDialogueWidget) \
@@ -55,7 +55,7 @@ private: \
 public:
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UDialogueWidget(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -68,25 +68,25 @@ public: \
 	DEFINE_ABSTRACT_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UDialogueWidget)
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_14_PROLOG
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_GENERATED_BODY_LEGACY \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_13_PROLOG
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_SPARSE_DATA \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_RPC_WRAPPERS \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_INCLASS \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_STANDARD_CONSTRUCTORS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_SPARSE_DATA \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_RPC_WRAPPERS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_INCLASS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_GENERATED_BODY \
+#define FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_SPARSE_DATA \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_INCLASS_NO_PURE_DECLS \
-	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_17_ENHANCED_CONSTRUCTORS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_SPARSE_DATA \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_INCLASS_NO_PURE_DECLS \
+	FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

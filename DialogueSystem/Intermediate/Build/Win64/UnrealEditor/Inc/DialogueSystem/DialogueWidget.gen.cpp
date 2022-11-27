@@ -18,9 +18,10 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 // End Cross Module References
 	DEFINE_FUNCTION(UDialogueWidget::execDisplayBox)
 	{
+		P_GET_PROPERTY(FStrProperty,Z_Param_DisplayText);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->DisplayBox();
+		P_THIS->DisplayBox(Z_Param_DisplayText);
 		P_NATIVE_END;
 	}
 	void UDialogueWidget::StaticRegisterNativesUDialogueWidget()
@@ -33,17 +34,27 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 	}
 	struct Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics
 	{
+		struct DialogueWidget_eventDisplayBox_Parms
+		{
+			FString DisplayText;
+		};
+		static const UECodeGen_Private::FStrPropertyParams NewProp_DisplayText;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayText = { "DisplayText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DialogueWidget_eventDisplayBox_Parms, DisplayText), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayText,
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::Function_MetaDataParams[] = {
 		{ "ModuleRelativePath", "DialogueWidget.h" },
 	};
 #endif
-	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDialogueWidget, nullptr, "DisplayBox", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::Function_MetaDataParams)) };
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UDialogueWidget, nullptr, "DisplayBox", nullptr, nullptr, sizeof(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::DialogueWidget_eventDisplayBox_Parms), Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::Function_MetaDataParams)) };
 	UFunction* Z_Construct_UFunction_UDialogueWidget_DisplayBox()
 	{
 		static UFunction* ReturnFunction = nullptr;
@@ -82,7 +93,7 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_DialogueSystem,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UDialogueWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDialogueWidget_DisplayBox, "DisplayBox" }, // 1960623025
+		{ &Z_Construct_UFunction_UDialogueWidget_DisplayBox, "DisplayBox" }, // 1548670943
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDialogueWidget_Statics::Class_MetaDataParams[] = {
@@ -147,9 +158,9 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueWidget, UDialogueWidget::StaticClass, TEXT("UDialogueWidget"), &Z_Registration_Info_UClass_UDialogueWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueWidget), 3302981176U) },
+		{ Z_Construct_UClass_UDialogueWidget, UDialogueWidget::StaticClass, TEXT("UDialogueWidget"), &Z_Registration_Info_UClass_UDialogueWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueWidget), 971143646U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_443115368(TEXT("/Script/DialogueSystem"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_3592066400(TEXT("/Script/DialogueSystem"),
 		Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

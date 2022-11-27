@@ -35,6 +35,24 @@
     <Filter Include="Source\DialogueSystem">
       <UniqueIdentifier>{03497D52-DB9E-3B85-9C45-B087455F05B5}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\DialogueSystem\DialogueContainer.cpp">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DialogueSystem\DialogueContainer.h">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DialogueSystem\DialogueEditorWidget.cpp">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DialogueSystem\DialogueEditorWidget.h">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\DialogueSystem\DialogueInteraction.cpp">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\DialogueSystem\DialogueInteraction.h">
+      <Filter>Source\DialogueSystem</Filter>
+    </ClInclude>
     <None Include="..\..\Source\DialogueSystem\DialogueSystem.Build.cs">
       <Filter>Source\DialogueSystem</Filter>
     </None>

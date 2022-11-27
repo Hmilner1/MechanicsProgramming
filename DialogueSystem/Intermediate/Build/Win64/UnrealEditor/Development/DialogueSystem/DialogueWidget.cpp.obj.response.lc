@@ -251,6 +251,10 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I ..\Intermediate\Build\Win64\UnrealEditor\Inc\AnimationDataController
 /I Developer\AnimationDataController\Public
+/I ..\Intermediate\Build\Win64\UnrealEditor\Inc\Blutility
+/I Editor\Blutility\Classes
+/I Editor\Blutility\Public
+/I Editor\MainFrame\Public
 /I "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Intermediate\Build\Win64\UnrealEditor\Inc\DialogueSystem"
 /I "E:\Uni Year 3\Mechanics Programming\MechanicsProgramming\MechanicsProgramming\DialogueSystem\Source"
 /I ThirdParty\mimalloc\include
