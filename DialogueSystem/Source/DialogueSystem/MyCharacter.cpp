@@ -63,7 +63,7 @@ void AMyCharacter::Interact()
 	FCollisionQueryParams CollisionParams;
 	CollisionParams.AddIgnoredActor(this);
 
-	DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1,0,1);
+	//DrawDebugLine(GetWorld(), Start, End, FColor::Green, false, 1,0,1);
 
 	bool IsHit = GetWorld()->LineTraceSingleByChannel(OutHit, Start, End, ECC_Visibility, CollisionParams);
 	if(IsHit)
