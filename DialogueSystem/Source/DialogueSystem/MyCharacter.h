@@ -6,7 +6,7 @@
 #include "GameFramework/Character.h"
 #include "MyCharacter.generated.h"
 
-DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FTestEvent, FString, SentText);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_TwoParams(FTestEvent, FString, SentText, FString, AiName);
 
 UCLASS()
 class DIALOGUESYSTEM_API AMyCharacter : public ACharacter
@@ -26,6 +26,10 @@ protected:
 	void HorizontalRotation(float Val);
 	void VerticalRotation(float Val);
 	void Interact();
+	void BoxOn();
+	void BoxOff();
+
+	bool m_BoxOpen;
 	
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="Camera")

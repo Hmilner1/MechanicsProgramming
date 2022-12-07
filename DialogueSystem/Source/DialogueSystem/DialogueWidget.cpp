@@ -8,6 +8,7 @@ void UDialogueWidget::NativeConstruct()
 {
 	Super::NativeConstruct();
 	m_Dialogue->SetVisibility(ESlateVisibility::Hidden);
+	m_DialogueName->SetVisibility(ESlateVisibility::Hidden);
 	m_Border->SetVisibility(ESlateVisibility::Hidden);
 	Visible = false;
 	
@@ -17,18 +18,21 @@ void UDialogueWidget::NativeConstruct()
 	Character->OnTestEvent.AddDynamic(this, &UDialogueWidget::DisplayBox);
 }
 
-void UDialogueWidget::DisplayBox(FString DisplayText)
+void UDialogueWidget::DisplayBox(FString DisplayText, FString DisplayName)
 {
 	if(!Visible)
 	{
 		m_Dialogue->SetVisibility(ESlateVisibility::Visible);
+		m_DialogueName->SetVisibility(ESlateVisibility::Visible);
 		m_Border->SetVisibility(ESlateVisibility::Visible);
 		m_Dialogue->SetText(FText::FromString(DisplayText));
+		m_DialogueName->SetText(FText::FromString(DisplayName));
 		Visible = true;
 	}
 	else if(Visible)
 	{
 		m_Dialogue->SetVisibility(ESlateVisibility::Hidden);
+		m_DialogueName->SetVisibility(ESlateVisibility::Hidden);
 		m_Border->SetVisibility(ESlateVisibility::Hidden);
 		Visible = false;
 	}

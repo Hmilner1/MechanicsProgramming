@@ -21,12 +21,17 @@ protected:
 	UTextBlock* m_Dialogue;
 
 	UPROPERTY(meta=( BindWidget))
+	UTextBlock* m_DialogueName;
+
+	UPROPERTY(meta=( BindWidget))
 	UBorder* m_Border;
+
+	
 	
 	bool Visible;
 
 	void NativeConstruct() override;
 
 	UFUNCTION()
-	void DisplayBox(FString DisplayText);
+	void DisplayBox(FString DisplayText, FString DisplayName);
 };

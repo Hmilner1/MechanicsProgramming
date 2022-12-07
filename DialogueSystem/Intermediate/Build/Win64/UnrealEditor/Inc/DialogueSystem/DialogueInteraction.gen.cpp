@@ -34,6 +34,10 @@ void EmptyLinkFunctionForGeneratedCodeDialogueInteraction() {}
 #endif
 		static const UECodeGen_Private::FStrPropertyParams NewProp_m_Dialogue;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_AiName_MetaData[];
+#endif
+		static const UECodeGen_Private::FStrPropertyParams NewProp_m_AiName;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_m_PlayerDialogue_MetaData[];
 #endif
 		static const UECodeGen_Private::FStrPropertyParams NewProp_m_PlayerDialogue;
@@ -63,6 +67,13 @@ void EmptyLinkFunctionForGeneratedCodeDialogueInteraction() {}
 #endif
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Dialogue = { "m_Dialogue", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADialogueInteraction, m_Dialogue), METADATA_PARAMS(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Dialogue_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Dialogue_MetaData)) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_AiName_MetaData[] = {
+		{ "Category", "TextBox" },
+		{ "ModuleRelativePath", "DialogueInteraction.h" },
+	};
+#endif
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_AiName = { "m_AiName", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADialogueInteraction, m_AiName), METADATA_PARAMS(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_AiName_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_AiName_MetaData)) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_PlayerDialogue_MetaData[] = {
 		{ "Category", "TextBox" },
 		{ "ModuleRelativePath", "DialogueInteraction.h" },
@@ -79,6 +90,7 @@ void EmptyLinkFunctionForGeneratedCodeDialogueInteraction() {}
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Root = { "m_Root", nullptr, (EPropertyFlags)0x002008000008000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ADialogueInteraction, m_Root), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Root_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Root_MetaData)) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ADialogueInteraction_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Dialogue,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_AiName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_PlayerDialogue,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ADialogueInteraction_Statics::NewProp_m_Root,
 	};
@@ -118,9 +130,9 @@ void EmptyLinkFunctionForGeneratedCodeDialogueInteraction() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueInteraction_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_ADialogueInteraction, ADialogueInteraction::StaticClass, TEXT("ADialogueInteraction"), &Z_Registration_Info_UClass_ADialogueInteraction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADialogueInteraction), 1179280764U) },
+		{ Z_Construct_UClass_ADialogueInteraction, ADialogueInteraction::StaticClass, TEXT("ADialogueInteraction"), &Z_Registration_Info_UClass_ADialogueInteraction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ADialogueInteraction), 1387544258U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueInteraction_h_1301384712(TEXT("/Script/DialogueSystem"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueInteraction_h_2367435639(TEXT("/Script/DialogueSystem"),
 		Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueInteraction_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueInteraction_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

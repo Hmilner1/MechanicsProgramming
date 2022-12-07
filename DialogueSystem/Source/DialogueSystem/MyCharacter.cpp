@@ -12,6 +12,7 @@ AMyCharacter::AMyCharacter()
 	
 	m_Camera = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	m_Camera->SetupAttachment(RootComponent);
+	m_BoxOpen = false;
 }
 
 void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
@@ -53,6 +54,20 @@ void AMyCharacter::VerticalRotation(float Val)
 
 void AMyCharacter::Interact()
 {
+	if(!m_BoxOpen)
+	{
+		BoxOn();
+	}
+	else if (m_BoxOpen)
+	{
+		BoxOff();
+		m_BoxOpen = false;
+	}
+	
+}
+
+void AMyCharacter::BoxOn()
+{
 	FHitResult OutHit;
 	FVector Start = RootComponent-> GetComponentLocation();
 	FVector ForwardVector = m_Camera->GetForwardVector();
@@ -75,9 +90,18 @@ void AMyCharacter::Interact()
 		if(IsValid(CharHit))
 		{
 			FString TextToSend= CharHit->m_Dialogue;
-			OnTestEvent.Broadcast(TextToSend);
+			FString Name= CharHit->m_AiName;
+			OnTestEvent.Broadcast(TextToSend, Name);
+			m_BoxOpen = true;
 		}
 	}
+}
+
+void AMyCharacter::BoxOff()
+{
+	FString TextToSend;
+	FString Name;
+	OnTestEvent.Broadcast(TextToSend, Name);
 }
 
 

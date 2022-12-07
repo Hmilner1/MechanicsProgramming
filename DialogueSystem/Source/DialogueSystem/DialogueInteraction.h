@@ -19,6 +19,9 @@ public:
 	FString m_Dialogue;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TextBox")
+	FString m_AiName;
+	
+	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TextBox")
 FString m_PlayerDialogue;
 
 protected:

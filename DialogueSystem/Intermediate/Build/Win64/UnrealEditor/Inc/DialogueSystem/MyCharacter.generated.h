@@ -17,11 +17,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 struct _Script_DialogueSystem_eventTestEvent_Parms \
 { \
 	FString SentText; \
+	FString AiName; \
 }; \
-static inline void FTestEvent_DelegateWrapper(const FMulticastScriptDelegate& TestEvent, const FString& SentText) \
+static inline void FTestEvent_DelegateWrapper(const FMulticastScriptDelegate& TestEvent, const FString& SentText, const FString& AiName) \
 { \
 	_Script_DialogueSystem_eventTestEvent_Parms Parms; \
 	Parms.SentText=SentText; \
+	Parms.AiName=AiName; \
 	TestEvent.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
