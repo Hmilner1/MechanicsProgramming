@@ -60,6 +60,7 @@ void AMyCharacter::Interact()
 	}
 	else if (m_BoxOpen)
 	{
+		
 		BoxOff();
 		m_BoxOpen = false;
 	}
@@ -85,23 +86,27 @@ void AMyCharacter::BoxOn()
 	{
 		AActor* HitActor;
 		HitActor = OutHit.GetActor();
-		//OutHit.GetActor()->Destroy();
 		ADialogueInteraction* CharHit = Cast<ADialogueInteraction>(HitActor);
+		
 		if(IsValid(CharHit))
 		{
-			FString TextToSend= CharHit->m_Dialogue;
-			FString Name= CharHit->m_AiName;
-			OnTestEvent.Broadcast(TextToSend, Name);
-			m_BoxOpen = true;
+			DialogueEvent.Broadcast(CharHit->m_Dialogue,CharHit->m_PlayerDialogue , CharHit->m_AiName);
+			DialogueTextNum++;
+			if (DialogueTextNum >= CharHit->m_Dialogue.Num() + CharHit->m_PlayerDialogue.Num())
+			{
+				DialogueTextNum = 0;
+				m_BoxOpen = true;
+			}
 		}
 	}
 }
 
 void AMyCharacter::BoxOff()
 {
-	FString TextToSend;
+	TArray<FString> TextToSend;
 	FString Name;
-	OnTestEvent.Broadcast(TextToSend, Name);
+	int TextNum = 0;
+	DialogueEvent.Broadcast(TextToSend,TextToSend, Name);
 }
 
 

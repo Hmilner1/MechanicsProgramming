@@ -16,13 +16,13 @@ public:
 	ADialogueInteraction();
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TextBox")
-	FString m_Dialogue;
+	TArray<FString> m_Dialogue;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TextBox")
 	FString m_AiName;
 	
 	UPROPERTY(EditAnywhere,BlueprintReadWrite, Category="TextBox")
-FString m_PlayerDialogue;
+	TArray<FString> m_PlayerDialogue;
 
 protected:
 

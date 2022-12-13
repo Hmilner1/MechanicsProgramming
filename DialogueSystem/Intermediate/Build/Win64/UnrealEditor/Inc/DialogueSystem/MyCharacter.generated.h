@@ -14,17 +14,19 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define DIALOGUESYSTEM_MyCharacter_generated_h
 
 #define FID_DialogueSystem_Source_DialogueSystem_MyCharacter_h_9_DELEGATE \
-struct _Script_DialogueSystem_eventTestEvent_Parms \
+struct _Script_DialogueSystem_eventDialogueEvent_Parms \
 { \
-	FString SentText; \
+	TArray<FString> AISentText; \
+	TArray<FString> PlayerSentText; \
 	FString AiName; \
 }; \
-static inline void FTestEvent_DelegateWrapper(const FMulticastScriptDelegate& TestEvent, const FString& SentText, const FString& AiName) \
+static inline void FDialogueEvent_DelegateWrapper(const FMulticastScriptDelegate& DialogueEvent, const TArray<FString>& AISentText, const TArray<FString>& PlayerSentText, const FString& AiName) \
 { \
-	_Script_DialogueSystem_eventTestEvent_Parms Parms; \
-	Parms.SentText=SentText; \
+	_Script_DialogueSystem_eventDialogueEvent_Parms Parms; \
+	Parms.AISentText=AISentText; \
+	Parms.PlayerSentText=PlayerSentText; \
 	Parms.AiName=AiName; \
-	TestEvent.ProcessMulticastDelegate<UObject>(&Parms); \
+	DialogueEvent.ProcessMulticastDelegate<UObject>(&Parms); \
 }
 
 

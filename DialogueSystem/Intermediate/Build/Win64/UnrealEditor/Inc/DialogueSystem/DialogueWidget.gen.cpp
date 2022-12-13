@@ -18,11 +18,12 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 // End Cross Module References
 	DEFINE_FUNCTION(UDialogueWidget::execDisplayBox)
 	{
-		P_GET_PROPERTY(FStrProperty,Z_Param_DisplayText);
+		P_GET_TARRAY(FString,Z_Param_AIDisplayText);
+		P_GET_TARRAY(FString,Z_Param_PlayerDisplayText);
 		P_GET_PROPERTY(FStrProperty,Z_Param_DisplayName);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->DisplayBox(Z_Param_DisplayText,Z_Param_DisplayName);
+		P_THIS->DisplayBox(Z_Param_AIDisplayText,Z_Param_PlayerDisplayText,Z_Param_DisplayName);
 		P_NATIVE_END;
 	}
 	void UDialogueWidget::StaticRegisterNativesUDialogueWidget()
@@ -37,10 +38,14 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 	{
 		struct DialogueWidget_eventDisplayBox_Parms
 		{
-			FString DisplayText;
+			TArray<FString> AIDisplayText;
+			TArray<FString> PlayerDisplayText;
 			FString DisplayName;
 		};
-		static const UECodeGen_Private::FStrPropertyParams NewProp_DisplayText;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_AIDisplayText_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_AIDisplayText;
+		static const UECodeGen_Private::FStrPropertyParams NewProp_PlayerDisplayText_Inner;
+		static const UECodeGen_Private::FArrayPropertyParams NewProp_PlayerDisplayText;
 		static const UECodeGen_Private::FStrPropertyParams NewProp_DisplayName;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 #if WITH_METADATA
@@ -48,10 +53,16 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 #endif
 		static const UECodeGen_Private::FFunctionParams FuncParams;
 	};
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayText = { "DisplayText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DialogueWidget_eventDisplayBox_Parms, DisplayText), METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_AIDisplayText_Inner = { "AIDisplayText", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_AIDisplayText = { "AIDisplayText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DialogueWidget_eventDisplayBox_Parms, AIDisplayText), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_PlayerDisplayText_Inner = { "PlayerDisplayText", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, 0, METADATA_PARAMS(nullptr, 0) };
+	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_PlayerDisplayText = { "PlayerDisplayText", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DialogueWidget_eventDisplayBox_Parms, PlayerDisplayText), EArrayPropertyFlags::None, METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FStrPropertyParams Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayName = { "DisplayName", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(DialogueWidget_eventDisplayBox_Parms, DisplayName), METADATA_PARAMS(nullptr, 0) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::PropPointers[] = {
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayText,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_AIDisplayText_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_AIDisplayText,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_PlayerDisplayText_Inner,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_PlayerDisplayText,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UDialogueWidget_DisplayBox_Statics::NewProp_DisplayName,
 	};
 #if WITH_METADATA
@@ -102,7 +113,7 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_DialogueSystem,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UDialogueWidget_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UDialogueWidget_DisplayBox, "DisplayBox" }, // 1897109425
+		{ &Z_Construct_UFunction_UDialogueWidget_DisplayBox, "DisplayBox" }, // 713846524
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UDialogueWidget_Statics::Class_MetaDataParams[] = {
@@ -176,9 +187,9 @@ void EmptyLinkFunctionForGeneratedCodeDialogueWidget() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UDialogueWidget, UDialogueWidget::StaticClass, TEXT("UDialogueWidget"), &Z_Registration_Info_UClass_UDialogueWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueWidget), 3250985625U) },
+		{ Z_Construct_UClass_UDialogueWidget, UDialogueWidget::StaticClass, TEXT("UDialogueWidget"), &Z_Registration_Info_UClass_UDialogueWidget, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UDialogueWidget), 964132754U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_636117825(TEXT("/Script/DialogueSystem"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_639276964(TEXT("/Script/DialogueSystem"),
 		Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_DialogueSystem_Source_DialogueSystem_DialogueWidget_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

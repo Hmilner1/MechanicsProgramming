@@ -25,13 +25,14 @@ protected:
 
 	UPROPERTY(meta=( BindWidget))
 	UBorder* m_Border;
-
-	
 	
 	bool Visible;
 
 	void NativeConstruct() override;
-
+	
+	int NumText = 0;
+	int dialoguePoint = 1;
+	
 	UFUNCTION()
-	void DisplayBox(FString DisplayText, FString DisplayName);
+	void DisplayBox(TArray<FString> AIDisplayText, TArray<FString> PlayerDisplayText, FString DisplayName);
 };
